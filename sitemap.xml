@@ -10,6 +10,9 @@
     <loc>https://kubdatalab.github.io/R-visualisation_new/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://kubdatalab.github.io/R-visualisation_new/aio.html</loc>
+  </url>
+  <url>
     <loc>https://kubdatalab.github.io/R-visualisation_new/citation.html</loc>
   </url>
   <url>
@@ -25,6 +28,9 @@
     <loc>https://kubdatalab.github.io/R-visualisation_new/getting_started.html</loc>
   </url>
   <url>
+    <loc>https://kubdatalab.github.io/R-visualisation_new/images.html</loc>
+  </url>
+  <url>
     <loc>https://kubdatalab.github.io/R-visualisation_new/index.html</loc>
   </url>
   <url>
@@ -35,6 +41,9 @@
   </url>
   <url>
     <loc>https://kubdatalab.github.io/R-visualisation_new/instructor/LICENSE.html</loc>
+  </url>
+  <url>
+    <loc>https://kubdatalab.github.io/R-visualisation_new/instructor/aio.html</loc>
   </url>
   <url>
     <loc>https://kubdatalab.github.io/R-visualisation_new/instructor/citation.html</loc>
@@ -52,10 +61,19 @@
     <loc>https://kubdatalab.github.io/R-visualisation_new/instructor/getting_started.html</loc>
   </url>
   <url>
+    <loc>https://kubdatalab.github.io/R-visualisation_new/instructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://kubdatalab.github.io/R-visualisation_new/instructor/index.html</loc>
   </url>
   <url>
+    <loc>https://kubdatalab.github.io/R-visualisation_new/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
     <loc>https://kubdatalab.github.io/R-visualisation_new/instructor/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://kubdatalab.github.io/R-visualisation_new/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://kubdatalab.github.io/R-visualisation_new/instructor/profiles.html</loc>
@@ -76,7 +94,13 @@
     <loc>https://kubdatalab.github.io/R-visualisation_new/instructor/whats-next.html</loc>
   </url>
   <url>
+    <loc>https://kubdatalab.github.io/R-visualisation_new/instructor-notes.html</loc>
+  </url>
+  <url>
     <loc>https://kubdatalab.github.io/R-visualisation_new/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://kubdatalab.github.io/R-visualisation_new/key-points.html</loc>
   </url>
   <url>
     <loc>https://kubdatalab.github.io/R-visualisation_new/profiles.html</loc>
