@@ -42,7 +42,7 @@ diamonds|>
   geom_point()
 ```
 
-<img src="fig/scaling-and-coordinates-rendered-coordinate_origo_1-1.png" style="display: block; margin: auto;" />
+<img src="fig/scaling-and-coordinates-rendered-coordinate_origo_1-1.png" alt="" style="display: block; margin: auto;" />
 
 We can control the axes precisely by adding xlim and/or ylim
 to the plot. We need to provide these functions with a 
@@ -58,7 +58,7 @@ diamonds |>
   ylim(c(0,100))
 ```
 
-<img src="fig/scaling-and-coordinates-rendered-coordinate_origo_2-1.png" style="display: block; margin: auto;" />
+<img src="fig/scaling-and-coordinates-rendered-coordinate_origo_2-1.png" alt="" style="display: block; margin: auto;" />
 
 It is nice to be able to control the two axes seperately. 
 Because the coordinate system should not always begin at zero.
@@ -83,7 +83,7 @@ Warning: Removed 12 rows containing missing values or values outside the scale r
 (`geom_point()`).
 ```
 
-<img src="fig/scaling-and-coordinates-rendered-zooming-1.png" style="display: block; margin: auto;" />
+<img src="fig/scaling-and-coordinates-rendered-zooming-1.png" alt="" style="display: block; margin: auto;" />
 
 That returns a warning! Some data is not within the limits we
 placed on the y-axis. This might not be a problem. Or it might.
@@ -102,7 +102,7 @@ diamonds |>
   coord_cartesian(ylim = c(50,70))
 ```
 
-<img src="fig/scaling-and-coordinates-rendered-cartesian-zoom-1.png" style="display: block; margin: auto;" />
+<img src="fig/scaling-and-coordinates-rendered-cartesian-zoom-1.png" alt="" style="display: block; margin: auto;" />
 
 This will not cut out data from the plot, they are still there
 for other geoms that might need them, they are simply not
@@ -158,7 +158,7 @@ Warning: Removed 12 rows containing missing values or values outside the scale r
 `geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'
 ```
 
-<img src="fig/scaling-and-coordinates-rendered-zoom_comparison-1.png" style="display: block; margin: auto;" />
+<img src="fig/scaling-and-coordinates-rendered-zoom_comparison-1.png" alt="" style="display: block; margin: auto;" />
 The trendlines are very different, because the data they are based on, is
 different. Also note that we get one set of warnings about missing data. 
 When we zoom using `ylim` both `geom_smooth`, and `geom_point` are missing data.
@@ -182,7 +182,7 @@ ggplot(data = diamonds, mapping = aes(x = carat, y = price, colour = color)) +
   coord_flip()
 ```
 
-<img src="fig/scaling-and-coordinates-rendered-flipped-coords-1.png" style="display: block; margin: auto;" />
+<img src="fig/scaling-and-coordinates-rendered-flipped-coords-1.png" alt="" style="display: block; margin: auto;" />
 
 
 
@@ -212,7 +212,7 @@ diamonds |>
   scale_y_log10()
 ```
 
-<img src="fig/scaling-and-coordinates-rendered-log-transform-y-1.png" style="display: block; margin: auto;" />
+<img src="fig/scaling-and-coordinates-rendered-log-transform-y-1.png" alt="" style="display: block; margin: auto;" />
 This plot reveals a gap in the prices. There are no diamonds in this dataset
 with a price between 1454 USD and 1546 USD. The educated guess is an error in 
 the original dataset.
@@ -268,7 +268,7 @@ diamonds |>
   coord_polar("y", start=0) 
 ```
 
-<img src="fig/scaling-and-coordinates-rendered-pie_chart-1.png" style="display: block; margin: auto;" />
+<img src="fig/scaling-and-coordinates-rendered-pie_chart-1.png" alt="" style="display: block; margin: auto;" />
 
 
 :::: spoiler
@@ -317,7 +317,7 @@ ggplot(data = diamonds, mapping = aes(x = carat, y = price, colour = color)) +
   geom_point() 
 ```
 
-<img src="fig/scaling-and-coordinates-rendered-scale_colour-1.png" style="display: block; margin: auto;" />
+<img src="fig/scaling-and-coordinates-rendered-scale_colour-1.png" alt="" style="display: block; margin: auto;" />
 
 We are not really able to distinquish the colour for "D" and "E". Or for "G" and
 "H". Controlling the colours is important not only for aesthetic reasons, but
@@ -347,7 +347,7 @@ ggplot(data = diamonds, mapping = aes(x = carat, y = price, colour = color)) +
   theme(panel.background = element_rect(fill = "black"))
 ```
 
-<img src="fig/scaling-and-coordinates-rendered-colour_brewer-1.png" style="display: block; margin: auto;" />
+<img src="fig/scaling-and-coordinates-rendered-colour_brewer-1.png" alt="" style="display: block; margin: auto;" />
 What we did to change the background will be covered in the next episode.
 
 Finding the optimal colours usually requires a lot of fiddling around. Rather
@@ -361,7 +361,7 @@ ggplot(data = diamonds, mapping = aes(x = carat, y = price, colour = color)) +
   scale_colour_manual(values=c('#7fc97f','#beaed4','#fdc086','#ffff99','#386cb0','#f0027f','#bf5b17'))
 ```
 
-<img src="fig/scaling-and-coordinates-rendered-manual_colours-1.png" style="display: block; margin: auto;" />
+<img src="fig/scaling-and-coordinates-rendered-manual_colours-1.png" alt="" style="display: block; margin: auto;" />
 
 The codes #7fc97f are "hex-codes", specifying the colours. You can find websites
 allowing you to chose a colour, and get the code. A good place to get suggestions

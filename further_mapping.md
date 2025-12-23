@@ -30,7 +30,7 @@ ggplot(data = diamonds, mapping = aes(x = carat, y = price, colour = color)) +
   geom_point() 
 ```
 
-<img src="fig/further_mapping-rendered-more_mapping-1.png" style="display: block; margin: auto;" />
+<img src="fig/further_mapping-rendered-more_mapping-1.png" alt="" style="display: block; margin: auto;" />
 
 The argument to which we are mapping the values in the column *color* is also
 called *colour*, making the code look a bit weird.
@@ -73,7 +73,7 @@ Warning in fortify(data, ...): Arguments in `...` must be used.
 ℹ Did you misspell an argument name?
 ```
 
-<img src="fig/further_mapping-rendered-chunk2-1.png" style="display: block; margin: auto;" />
+<img src="fig/further_mapping-rendered-chunk2-1.png" alt="" style="display: block; margin: auto;" />
 What happened to the colour? The colour argument is outside the aes() function.
 That means that we are not mapping data to the colour!
 
@@ -90,7 +90,7 @@ ggplot(data = diamonds, mapping = aes(x = carat, y = price, colour = color, size
   geom_point()
 ```
 
-<img src="fig/further_mapping-rendered-unnamed-chunk-1-1.png" style="display: block; margin: auto;" />
+<img src="fig/further_mapping-rendered-unnamed-chunk-1-1.png" alt="" style="display: block; margin: auto;" />
 
 Not at good plot... We need to think about the combination of stuff we want to
 plot. Often two plots are better than trying to cram everything into a single plot.
@@ -127,7 +127,7 @@ ggplot(data = diamonds, mapping = aes(x = carat, y = price, colour = color)) +
   geom_point(alpha = 0.1)
 ```
 
-<img src="fig/further_mapping-rendered-unnamed-chunk-2-1.png" style="display: block; margin: auto;" />
+<img src="fig/further_mapping-rendered-unnamed-chunk-2-1.png" alt="" style="display: block; margin: auto;" />
 
 `alpha` controls the transparency of the points plotted, and is a handy way of
 handling overplotting, the phenomenon that multiple data points might be 
@@ -157,7 +157,7 @@ colour vision.
 In principle we can plot any kind of shape. But without having to program them
 ourself, these are available directly in ggplot. They are numbered, because it is easier to write "14" than "square box with upwardspointing triangle inside".
 
-<img src="fig/further_mapping-rendered-point_shapes-1.png" style="display: block; margin: auto;" />
+<img src="fig/further_mapping-rendered-point_shapes-1.png" alt="" style="display: block; margin: auto;" />
 
 
 

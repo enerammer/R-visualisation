@@ -47,7 +47,7 @@ Warning: Removed 5445 rows containing missing values or values outside the scale
 (`geom_point()`).
 ```
 
-<img src="fig/facets-rendered-too_much_in_plot-1.png" style="display: block; margin: auto;" />
+<img src="fig/facets-rendered-too_much_in_plot-1.png" alt="" style="display: block; margin: auto;" />
 
 This is probably not the best way to discover patterns in the data. It is 
 actually so bad that ggplot warns us that we are using too many different shapes!
@@ -65,7 +65,7 @@ ggplot(data = diamonds, mapping = aes(x = carat, y = price, colour = color)) +
   facet_wrap(~clarity)
 ```
 
-<img src="fig/facets-rendered-first_facet-1.png" style="display: block; margin: auto;" />
+<img src="fig/facets-rendered-first_facet-1.png" alt="" style="display: block; margin: auto;" />
 Here we can see that the price rises more rapidly with size, for the better 
 clarities, something that would have been impossible to see in the previous plot.
 
@@ -132,7 +132,7 @@ diamonds |>
     facet_grid(clarity ~ color)
 ```
 
-<img src="fig/facets-rendered-facet_grid-1.png" style="display: block; margin: auto;" />
+<img src="fig/facets-rendered-facet_grid-1.png" alt="" style="display: block; margin: auto;" />
 
 Be careful using facets, especially *facet_grid* when you work
 with small datasets. You might end up with too little data in 

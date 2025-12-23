@@ -74,7 +74,7 @@ the diamond dataset:
 ggplot(data = diamonds)
 ```
 
-<img src="fig/getting_started-rendered-first_plot-1.png" style="display: block; margin: auto;" />
+<img src="fig/getting_started-rendered-first_plot-1.png" alt="" style="display: block; margin: auto;" />
 This in itself produces an extremely boring plot. But it is a plot, and actually
 contains the data already. What is 
 missing is information on what exactly it is in the dataset we are trying to plot.
@@ -90,7 +90,7 @@ on the y-axis:
 ggplot(data = diamonds, mapping = aes(x = carat, y = price))
 ```
 
-<img src="fig/getting_started-rendered-second_plot_mapping-1.png" style="display: block; margin: auto;" />
+<img src="fig/getting_started-rendered-second_plot_mapping-1.png" alt="" style="display: block; margin: auto;" />
 
 We are not actually seeing any data, because we have not specified the way the
 individual datapoints should be plotted. But we do see that the axes now have values.
@@ -106,7 +106,7 @@ ggplot(data = diamonds, mapping = aes(x = carat, y = price)) +
   geom_point()
 ```
 
-<img src="fig/getting_started-rendered-second_plot_point-1.png" style="display: block; margin: auto;" />
+<img src="fig/getting_started-rendered-second_plot_point-1.png" alt="" style="display: block; margin: auto;" />
 
 Comparing with the original template, we did not place any mapping in the 
 `<GEOM_FUNCTION>` but rather in the first `ggplot()` function. 

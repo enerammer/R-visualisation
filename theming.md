@@ -34,11 +34,12 @@ ggplot(diamonds, aes(carat, price)) +
   theme_bw()
 ```
 
-<img src="fig/theming-rendered-theme_bw-1.png" style="display: block; margin: auto;" />
+<img src="fig/theming-rendered-theme_bw-1.png" alt="" style="display: block; margin: auto;" />
 More exists:
 
 ``` error
-Error: Can't find method for generic `|(e1, e2)`:
+Error:
+! Can't find method for generic `|(e1, e2)`:
 - e1: <ggplot2::ggplot>
 - e2: <ggplot2::ggplot>
 ```
@@ -68,7 +69,7 @@ diamonds |>
   theme(axis.text.y = element_text(angle= 45))
 ```
 
-<img src="fig/theming-rendered-theming-1.png" style="display: block; margin: auto;" />
+<img src="fig/theming-rendered-theming-1.png" alt="" style="display: block; margin: auto;" />
 
 Angling the labels in a plot can be good for readability. However the actual
 way to do it can be a bit more involved as you see above. Read the help for
@@ -117,7 +118,7 @@ diamonds |>
         panel.background = element_rect(fill = "red"))
 ```
 
-<img src="fig/theming-rendered-background-1.png" style="display: block; margin: auto;" />
+<img src="fig/theming-rendered-background-1.png" alt="" style="display: block; margin: auto;" />
 Note that we are not setting the `plot.background`, as that would change the 
 background of the entire plot, rather than the background of the actual 
 area on which we are plotting.

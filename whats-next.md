@@ -35,7 +35,8 @@ list of build-in geoms in ggplot2:
 
 
 ``` error
-Error: object '.' not found
+Error:
+! object '.' not found
 ```
 ggplot2 is also build as an extensible package, making 
 it relatively easy to build extensions, that does things

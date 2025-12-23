@@ -46,7 +46,7 @@ diamonds |>
 `stat_bin()` using `bins = 30`. Pick better value `binwidth`.
 ```
 
-<img src="fig/different_plots-rendered-histogram-1.png" style="display: block; margin: auto;" />
+<img src="fig/different_plots-rendered-histogram-1.png" alt="" style="display: block; margin: auto;" />
 
 Note that we get a warning from `geom_histogram` that the number of 
 bins by default is set to 30. 30 bins will almost never be the correct
@@ -59,7 +59,7 @@ diamonds |>
   geom_histogram(bins = 25)
 ```
 
-<img src="fig/different_plots-rendered-adjust_bins-1.png" style="display: block; margin: auto;" />
+<img src="fig/different_plots-rendered-adjust_bins-1.png" alt="" style="display: block; margin: auto;" />
 
 What number of bins should I choose? Some heuristics for choosing does exists, 
 but in general it is our recommendation that you 
@@ -91,7 +91,7 @@ diamonds |>
   geom_bar()
 ```
 
-<img src="fig/different_plots-rendered-bar_charts-1.png" style="display: block; margin: auto;" />
+<img src="fig/different_plots-rendered-bar_charts-1.png" alt="" style="display: block; margin: auto;" />
 
 ## A small excursion
 
@@ -140,7 +140,7 @@ diamonds |>
   geom_bar()
 ```
 
-<img src="fig/different_plots-rendered-categorical_order-1.png" style="display: block; margin: auto;" />
+<img src="fig/different_plots-rendered-categorical_order-1.png" alt="" style="display: block; margin: auto;" />
 
 `fct_rev` is a function that reverses the order of a factor. It comes from the
 library `forcats` that makes it easier to work with categorical data.
@@ -160,7 +160,7 @@ diamonds |>
   geom_boxplot()
 ```
 
-<img src="fig/different_plots-rendered-boxplots-1.png" style="display: block; margin: auto;" />
+<img src="fig/different_plots-rendered-boxplots-1.png" alt="" style="display: block; margin: auto;" />
 
 Here we have the variable we are making boxplots of, on the x-axis,
 and splitting them up in one plot per cut, on the y-axis.
@@ -183,7 +183,7 @@ Boxplots are not necessarily the best option for showing distributions.
 A good alternative could be violinplots. They show a *density plot* - basically 
 a histogram with infinite bins - for each group, plotted symmetrically around an axis:
 
-<img src="fig/different_plots-rendered-violin_plot-1.png" style="display: block; margin: auto;" />
+<img src="fig/different_plots-rendered-violin_plot-1.png" alt="" style="display: block; margin: auto;" />
 
 :::: challenge
 ## Exercise
