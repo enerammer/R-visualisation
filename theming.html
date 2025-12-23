@@ -347,7 +347,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Theming</h1>
-        <p>Last updated on 2025-12-16 |
+        <p>Last updated on 2025-12-23 |
 
         <a href="https://github.com/kubdatalab/R-visualisation_new/edit/main/episodes/theming.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -397,12 +397,13 @@ family of <code>theme</code> functions:</p>
 <span>  <span class="fu">geom_point</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">theme_bw</span><span class="op">(</span><span class="op">)</span></span></code></pre>
 </div>
-<p><img src="fig/theming-rendered-theme_bw-1.png" style="display: block; margin: auto;" class="figure">
+<p><img src="fig/theming-rendered-theme_bw-1.png" alt="" style="display: block; margin: auto;" class="figure">
 More exists:</p>
 <div class="codewrapper">
 <h3 class="code-label">ERROR<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="error" tabindex="0"><code>Error: Can't find method for generic `|(e1, e2)`:
+<pre class="error" tabindex="0"><code>Error:
+! Can't find method for generic `|(e1, e2)`:
 - e1: &lt;ggplot2::ggplot&gt;
 - e2: &lt;ggplot2::ggplot&gt;</code></pre>
 </div>
@@ -436,7 +437,7 @@ followed by what we did to the axis, eg: “scale_y_log10”</p>
 <span>  <span class="fu">theme_dark</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">theme</span><span class="op">(</span>axis.text.y <span class="op">=</span> <span class="fu">element_text</span><span class="op">(</span>angle<span class="op">=</span> <span class="fl">45</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
-<figure><img src="fig/theming-rendered-theming-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>Angling the labels in a plot can be good for readability. However the
+<figure><img src="fig/theming-rendered-theming-1.png" alt="" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>Angling the labels in a plot can be good for readability. However the
 actual way to do it can be a bit more involved as you see above. Read
 the help for theme to get at complete list of things that can be
 changed. There are 97 things in total.</p>
@@ -485,7 +486,7 @@ this:</p>
 <span>  <span class="fu">theme</span><span class="op">(</span>axis.text.y <span class="op">=</span> <span class="fu">element_text</span><span class="op">(</span>angle<span class="op">=</span> <span class="fl">45</span><span class="op">)</span>,</span>
 <span>        panel.background <span class="op">=</span> <span class="fu">element_rect</span><span class="op">(</span>fill <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
-<p><img src="fig/theming-rendered-background-1.png" style="display: block; margin: auto;" class="figure">
+<p><img src="fig/theming-rendered-background-1.png" alt="" style="display: block; margin: auto;" class="figure">
 Note that we are not setting the <code>plot.background</code>, as that
 would change the background of the entire plot, rather than the
 background of the actual area on which we are plotting.</p>
@@ -568,8 +569,8 @@ any links that you are not going to use.
   "url": "https://kubdatalab.github.io/R-visualisation_new/theming.html",
   "identifier": "https://kubdatalab.github.io/R-visualisation_new/theming.html",
   "dateCreated": "2024-07-31",
-  "dateModified": "2025-12-16",
-  "datePublished": "2025-12-16"
+  "dateModified": "2025-12-23",
+  "datePublished": "2025-12-23"
 }
 
   </script><script>

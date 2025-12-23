@@ -356,7 +356,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Scaling and coordinates</h1>
-        <p>Last updated on 2025-12-16 |
+        <p>Last updated on 2025-12-23 |
 
         <a href="https://github.com/kubdatalab/R-visualisation_new/edit/main/episodes/scaling-and-coordinates.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -410,7 +410,7 @@ we force it to?</p>
 <span>  <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span><span class="va">depth</span>, <span class="va">table</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_point</span><span class="op">(</span><span class="op">)</span></span></code></pre>
 </div>
-<figure><img src="fig/scaling-and-coordinates-rendered-coordinate_origo_1-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>We can control the axes precisely by adding xlim and/or ylim to the
+<figure><img src="fig/scaling-and-coordinates-rendered-coordinate_origo_1-1.png" alt="" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>We can control the axes precisely by adding xlim and/or ylim to the
 plot. We need to provide these functions with a vector of length 2,
 indicating the minimum and maximum values we want:</p>
 <div class="codewrapper sourceCode" id="cb2">
@@ -423,7 +423,7 @@ indicating the minimum and maximum values we want:</p>
 <span>  <span class="fu">xlim</span><span class="op">(</span><span class="fu">c</span><span class="op">(</span><span class="fl">0</span>,<span class="fl">80</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">ylim</span><span class="op">(</span><span class="fu">c</span><span class="op">(</span><span class="fl">0</span>,<span class="fl">100</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
-<figure><img src="fig/scaling-and-coordinates-rendered-coordinate_origo_2-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>It is nice to be able to control the two axes seperately. Because the
+<figure><img src="fig/scaling-and-coordinates-rendered-coordinate_origo_2-1.png" alt="" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>It is nice to be able to control the two axes seperately. Because the
 coordinate system should not always begin at zero. Especially
 time-series, showing a development over time, should often <em>not</em>
 begin at zero.</p>
@@ -446,7 +446,7 @@ begin at zero.</p>
 <pre class="warning" tabindex="0"><code>Warning: Removed 12 rows containing missing values or values outside the scale range
 (`geom_point()`).</code></pre>
 </div>
-<figure><img src="fig/scaling-and-coordinates-rendered-zooming-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>That returns a warning! Some data is not within the limits we placed
+<figure><img src="fig/scaling-and-coordinates-rendered-zooming-1.png" alt="" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>That returns a warning! Some data is not within the limits we placed
 on the y-axis. This might not be a problem. Or it might.</p>
 <p>If we are doing more advanced stuff like scaling the axes (eg.
 logarithmically), cutting of data might be a bad idea.</p>
@@ -461,7 +461,7 @@ logarithmically), cutting of data might be a bad idea.</p>
 <span>  <span class="fu">geom_point</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">coord_cartesian</span><span class="op">(</span>ylim <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="fl">50</span>,<span class="fl">70</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
-<figure><img src="fig/scaling-and-coordinates-rendered-cartesian-zoom-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>This will not cut out data from the plot, they are still there for
+<figure><img src="fig/scaling-and-coordinates-rendered-cartesian-zoom-1.png" alt="" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>This will not cut out data from the plot, they are still there for
 other geoms that might need them, they are simply not plotted.</p>
 </div>
 <div class="section level3">
@@ -518,7 +518,7 @@ where we zoom using <code>coord_cartesian</code>:</p>
 </h3>
 <pre class="output" tabindex="0"><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
 </div>
-<p><img src="fig/scaling-and-coordinates-rendered-zoom_comparison-1.png" style="display: block; margin: auto;" class="figure">
+<p><img src="fig/scaling-and-coordinates-rendered-zoom_comparison-1.png" alt="" style="display: block; margin: auto;" class="figure">
 The trendlines are very different, because the data they are based on,
 is different. Also note that we get one set of warnings about missing
 data. When we zoom using <code>ylim</code> both
@@ -541,7 +541,7 @@ function that changes the coordinate system:</p>
 <span>  <span class="fu">geom_point</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">coord_flip</span><span class="op">(</span><span class="op">)</span></span></code></pre>
 </div>
-<figure><img src="fig/scaling-and-coordinates-rendered-flipped-coords-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>Other coord_ functions exists, that does more advanced
+<figure><img src="fig/scaling-and-coordinates-rendered-flipped-coords-1.png" alt="" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>Other coord_ functions exists, that does more advanced
 transformations of the coordinate system.</p>
 <div class="section level3">
 <h3 id="log-scale">Log-scale<a class="anchor" aria-label="anchor" href="#log-scale"></a></h3>
@@ -565,7 +565,7 @@ need to look into the package <code>scales</code>:</p>
 <span>  <span class="fu">geom_point</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">scale_y_log10</span><span class="op">(</span><span class="op">)</span></span></code></pre>
 </div>
-<p><img src="fig/scaling-and-coordinates-rendered-log-transform-y-1.png" style="display: block; margin: auto;" class="figure">
+<p><img src="fig/scaling-and-coordinates-rendered-log-transform-y-1.png" alt="" style="display: block; margin: auto;" class="figure">
 This plot reveals a gap in the prices. There are no diamonds in this
 dataset with a price between 1454 USD and 1546 USD. The educated guess
 is an error in the original dataset.</p>
@@ -588,7 +588,7 @@ y-axis) with both axes log transformed.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb13">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -627,12 +627,12 @@ coordinate system to be polar (the y-axis specifically), beginning at
 <span>  <span class="fu">geom_bar</span><span class="op">(</span>position <span class="op">=</span> <span class="st">"stack"</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">coord_polar</span><span class="op">(</span><span class="st">"y"</span>, start<span class="op">=</span><span class="fl">0</span><span class="op">)</span> </span></code></pre>
 </div>
-<figure><img src="fig/scaling-and-coordinates-rendered-pie_chart-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
+<figure><img src="fig/scaling-and-coordinates-rendered-pie_chart-1.png" alt="" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
   <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> What are polar coordinates? </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
 <div class="accordion-body">
 <p>Our ordinary coordinate system is a cartesian coordinate system. Each
 point in the system are defined by two values, X and Y, representing the
@@ -682,7 +682,7 @@ frustrated.</p>
 <code class="sourceCode R"><span><span class="fu">ggplot</span><span class="op">(</span>data <span class="op">=</span> <span class="va">diamonds</span>, mapping <span class="op">=</span> <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">carat</span>, y <span class="op">=</span> <span class="va">price</span>, colour <span class="op">=</span> <span class="va">color</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_point</span><span class="op">(</span><span class="op">)</span> </span></code></pre>
 </div>
-<figure><img src="fig/scaling-and-coordinates-rendered-scale_colour-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>We are not really able to distinquish the colour for “D” and “E”. Or
+<figure><img src="fig/scaling-and-coordinates-rendered-scale_colour-1.png" alt="" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>We are not really able to distinquish the colour for “D” and “E”. Or
 for “G” and “H”. Controlling the colours is important not only for
 aesthetic reasons, but also for actually illustrating what the plot is
 showing.</p>
@@ -710,7 +710,7 @@ even worse:</p>
 <span>  <span class="fu">scale_colour_brewer</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">theme</span><span class="op">(</span>panel.background <span class="op">=</span> <span class="fu">element_rect</span><span class="op">(</span>fill <span class="op">=</span> <span class="st">"black"</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
-<p><img src="fig/scaling-and-coordinates-rendered-colour_brewer-1.png" style="display: block; margin: auto;" class="figure">
+<p><img src="fig/scaling-and-coordinates-rendered-colour_brewer-1.png" alt="" style="display: block; margin: auto;" class="figure">
 What we did to change the background will be covered in the next
 episode.</p>
 <p>Finding the optimal colours usually requires a lot of fiddling
@@ -724,7 +724,7 @@ them manually, like this:</p>
 <span>  <span class="fu">geom_point</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">scale_colour_manual</span><span class="op">(</span>values<span class="op">=</span><span class="fu">c</span><span class="op">(</span><span class="st">'#7fc97f'</span>,<span class="st">'#beaed4'</span>,<span class="st">'#fdc086'</span>,<span class="st">'#ffff99'</span>,<span class="st">'#386cb0'</span>,<span class="st">'#f0027f'</span>,<span class="st">'#bf5b17'</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
-<figure><img src="fig/scaling-and-coordinates-rendered-manual_colours-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>The codes #7fc97f are “hex-codes”, specifying the colours. You can
+<figure><img src="fig/scaling-and-coordinates-rendered-manual_colours-1.png" alt="" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>The codes #7fc97f are “hex-codes”, specifying the colours. You can
 find websites allowing you to chose a colour, and get the code. A good
 place to get suggestions for colour-pallettes is <a href="https://colorbrewer2.org/" class="external-link">Colorbrewer2</a>.</p>
 <div id="keypoints1" class="callout keypoints">
@@ -804,8 +804,8 @@ any links that you are not going to use.
   "url": "https://kubdatalab.github.io/R-visualisation_new/scaling-and-coordinates.html",
   "identifier": "https://kubdatalab.github.io/R-visualisation_new/scaling-and-coordinates.html",
   "dateCreated": "2024-07-31",
-  "dateModified": "2025-12-16",
-  "datePublished": "2025-12-16"
+  "dateModified": "2025-12-23",
+  "datePublished": "2025-12-23"
 }
 
   </script><script>

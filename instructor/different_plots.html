@@ -359,7 +359,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Different types of plots</h1>
-        <p>Last updated on 2025-12-16 |
+        <p>Last updated on 2025-12-23 |
 
         <a href="https://github.com/kubdatalab/R-visualisation_new/edit/main/episodes/different_plots.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -421,7 +421,7 @@ data before plotting, eg. by filtering it.</p>
 </h3>
 <pre class="output" tabindex="0"><code>`stat_bin()` using `bins = 30`. Pick better value `binwidth`.</code></pre>
 </div>
-<figure><img src="../fig/different_plots-rendered-histogram-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>Note that we get a warning from <code>geom_histogram</code> that the
+<figure><img src="../fig/different_plots-rendered-histogram-1.png" alt="" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>Note that we get a warning from <code>geom_histogram</code> that the
 number of bins by default is set to 30. 30 bins will almost never be the
 correct number of bins, and we should chose a better value ourself.</p>
 <div class="codewrapper sourceCode" id="cb3">
@@ -432,7 +432,7 @@ correct number of bins, and we should chose a better value ourself.</p>
 <span>  <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span><span class="va">carat</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_histogram</span><span class="op">(</span>bins <span class="op">=</span> <span class="fl">25</span><span class="op">)</span></span></code></pre>
 </div>
-<figure><img src="../fig/different_plots-rendered-adjust_bins-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>What number of bins should I choose? Some heuristics for choosing
+<figure><img src="../fig/different_plots-rendered-adjust_bins-1.png" alt="" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>What number of bins should I choose? Some heuristics for choosing
 does exists, but in general it is our recommendation that you experiment
 with different number of bins to find the one that best shows your
 data.</p>
@@ -460,7 +460,7 @@ barchart. <code>geom_bar</code> counts the number of observations itself
 <span>  <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span><span class="va">color</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_bar</span><span class="op">(</span><span class="op">)</span></span></code></pre>
 </div>
-<figure><img src="../fig/different_plots-rendered-bar_charts-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure></section><section><h2 class="section-heading" id="a-small-excursion">A small excursion<a class="anchor" aria-label="anchor" href="#a-small-excursion"></a></h2>
+<figure><img src="../fig/different_plots-rendered-bar_charts-1.png" alt="" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure></section><section><h2 class="section-heading" id="a-small-excursion">A small excursion<a class="anchor" aria-label="anchor" href="#a-small-excursion"></a></h2>
 <hr class="half-width"><p>Why are the columns in the barchart above in that order?</p>
 <p>One might guess that they are simply in alphabetical order.</p>
 <p>Not so! <code>color</code> is a categorical variable. Diamonds either
@@ -506,7 +506,7 @@ are plotting:</p>
 <span>  <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span><span class="va">color</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_bar</span><span class="op">(</span><span class="op">)</span></span></code></pre>
 </div>
-<figure><img src="../fig/different_plots-rendered-categorical_order-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p><code>fct_rev</code> is a function that reverses the order of a
+<figure><img src="../fig/different_plots-rendered-categorical_order-1.png" alt="" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p><code>fct_rev</code> is a function that reverses the order of a
 factor. It comes from the library <code>forcats</code> that makes it
 easier to work with categorical data.</p>
 </section><section><h2 class="section-heading" id="boxplots">Boxplots<a class="anchor" aria-label="anchor" href="#boxplots"></a></h2>
@@ -521,7 +521,7 @@ several boxplots in one plot:</p>
 <span>  <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">carat</span>, y <span class="op">=</span> <span class="va">cut</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_boxplot</span><span class="op">(</span><span class="op">)</span></span></code></pre>
 </div>
-<figure><img src="../fig/different_plots-rendered-boxplots-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>Here we have the variable we are making boxplots of, on the x-axis,
+<figure><img src="../fig/different_plots-rendered-boxplots-1.png" alt="" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>Here we have the variable we are making boxplots of, on the x-axis,
 and splitting them up in one plot per cut, on the y-axis.</p>
 <div id="what-is-a-boxplot" class="callout">
 <div class="callout-square">
@@ -545,7 +545,7 @@ interquartile range from the box.</p>
 distributions. A good alternative could be violinplots. They show a
 <em>density plot</em> - basically a histogram with infinite bins - for
 each group, plotted symmetrically around an axis:</p>
-<figure><img src="../fig/different_plots-rendered-violin_plot-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div id="exercise" class="callout challenge">
+<figure><img src="../fig/different_plots-rendered-violin_plot-1.png" alt="" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div id="exercise" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
@@ -564,7 +564,7 @@ on the x-axis, and cut on the y-axis.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -670,8 +670,8 @@ any links that you are not going to use.
   "url": "https://kubdatalab.github.io/R-visualisation_new/instructor/different_plots.html",
   "identifier": "https://kubdatalab.github.io/R-visualisation_new/instructor/different_plots.html",
   "dateCreated": "2024-07-31",
-  "dateModified": "2025-12-16",
-  "datePublished": "2025-12-16"
+  "dateModified": "2025-12-23",
+  "datePublished": "2025-12-23"
 }
 
   </script><script>

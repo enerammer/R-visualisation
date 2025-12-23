@@ -356,7 +356,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Getting started</h1>
-        <p>Last updated on 2025-12-16 |
+        <p>Last updated on 2025-12-23 |
 
         <a href="https://github.com/kubdatalab/R-visualisation_new/edit/main/episodes/getting_started.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -443,7 +443,7 @@ every plot we make.</p>
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">ggplot</span><span class="op">(</span>data <span class="op">=</span> <span class="va">diamonds</span><span class="op">)</span></span></code></pre>
 </div>
-<p><img src="fig/getting_started-rendered-first_plot-1.png" style="display: block; margin: auto;" class="figure">
+<p><img src="fig/getting_started-rendered-first_plot-1.png" alt="" style="display: block; margin: auto;" class="figure">
 This in itself produces an extremely boring plot. But it is a plot, and
 actually contains the data already. What is missing is information on
 what exactly it is in the dataset we are trying to plot. How should our
@@ -459,7 +459,7 @@ want to plot <code>carat</code> on the x-axis, and the
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">ggplot</span><span class="op">(</span>data <span class="op">=</span> <span class="va">diamonds</span>, mapping <span class="op">=</span> <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">carat</span>, y <span class="op">=</span> <span class="va">price</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
-<figure><img src="fig/getting_started-rendered-second_plot_mapping-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>We are not actually seeing any data, because we have not specified
+<figure><img src="fig/getting_started-rendered-second_plot_mapping-1.png" alt="" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>We are not actually seeing any data, because we have not specified
 the way the individual datapoints should be plotted. But we do see that
 the axes now have values. The data has influenced the plot!</p>
 <p>We would like to make a classic scatter plot, and do that by adding
@@ -473,7 +473,7 @@ the right <code>&lt;GEOM_FUNCTION&gt;</code> to our plot. The
 <code class="sourceCode R"><span><span class="fu">ggplot</span><span class="op">(</span>data <span class="op">=</span> <span class="va">diamonds</span>, mapping <span class="op">=</span> <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">carat</span>, y <span class="op">=</span> <span class="va">price</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_point</span><span class="op">(</span><span class="op">)</span></span></code></pre>
 </div>
-<figure><img src="fig/getting_started-rendered-second_plot_point-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>Comparing with the original template, we did not place any mapping in
+<figure><img src="fig/getting_started-rendered-second_plot_point-1.png" alt="" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>Comparing with the original template, we did not place any mapping in
 the <code>&lt;GEOM_FUNCTION&gt;</code> but rather in the first
 <code>ggplot()</code> function. The <code>&lt;GEOM_FUNCTION&gt;</code>
 will inherit the original mapping, if we do not provide a specific
@@ -562,7 +562,7 @@ the diamond). Make it a scatterplot</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -653,8 +653,8 @@ any links that you are not going to use.
   "url": "https://kubdatalab.github.io/R-visualisation_new/getting_started.html",
   "identifier": "https://kubdatalab.github.io/R-visualisation_new/getting_started.html",
   "dateCreated": "2024-07-31",
-  "dateModified": "2025-12-16",
-  "datePublished": "2025-12-16"
+  "dateModified": "2025-12-23",
+  "datePublished": "2025-12-23"
 }
 
   </script><script>
