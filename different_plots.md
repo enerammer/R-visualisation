@@ -1,7 +1,7 @@
 ---
 title: "Different types of plots"
 teaching: 10
-exercises: 5
+exercises: 6
 ---
 
 :::: questions
