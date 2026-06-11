@@ -34,9 +34,25 @@ ggplot2 comes with a lot of functionality. This is the
 list of build-in geoms in ggplot2:
 
 
-``` error
-Error:
-! object '.' not found
+``` output
+ [1] "geom_abline"            "geom_area"              "geom_bar"              
+ [4] "geom_bin_2d"            "geom_bin2d"             "geom_blank"            
+ [7] "geom_boxplot"           "geom_col"               "geom_contour"          
+[10] "geom_contour_filled"    "geom_count"             "geom_crossbar"         
+[13] "geom_curve"             "geom_density"           "geom_density_2d"       
+[16] "geom_density_2d_filled" "geom_density2d"         "geom_density2d_filled" 
+[19] "geom_dotplot"           "geom_errorbar"          "geom_errorbarh"        
+[22] "geom_freqpoly"          "geom_function"          "geom_hex"              
+[25] "geom_histogram"         "geom_hline"             "geom_jitter"           
+[28] "geom_label"             "geom_line"              "geom_linerange"        
+[31] "geom_map"               "geom_path"              "geom_point"            
+[34] "geom_pointrange"        "geom_polygon"           "geom_qq"               
+[37] "geom_qq_line"           "geom_quantile"          "geom_raster"           
+[40] "geom_rect"              "geom_ribbon"            "geom_rug"              
+[43] "geom_segment"           "geom_sf"                "geom_sf_label"         
+[46] "geom_sf_text"           "geom_smooth"            "geom_spoke"            
+[49] "geom_step"              "geom_text"              "geom_tile"             
+[52] "geom_violin"            "geom_vline"            
 ```
 ggplot2 is also build as an extensible package, making 
 it relatively easy to build extensions, that does things

@@ -36,13 +36,7 @@ ggplot(diamonds, aes(carat, price)) +
 
 <img src="fig/theming-rendered-theme_bw-1.png" alt="" style="display: block; margin: auto;" />
 More exists:
-
-``` error
-Error:
-! Can't find method for generic `|(e1, e2)`:
-- e1: <ggplot2::ggplot>
-- e2: <ggplot2::ggplot>
-```
+<img src="fig/theming-rendered-different_themes-1.png" alt="" style="display: block; margin: auto;" />
 
 :::: callout
 ## Notice the pattern?
